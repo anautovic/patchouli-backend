@@ -48,7 +48,7 @@ padding: 1rem 2rem;
        setLoading(true)
        setTimeout(() =>{
            setLoading(false)
-       }, 3000)
+       }, 1500)
    }, [])
     return (
         

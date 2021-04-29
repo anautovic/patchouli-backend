@@ -1,7 +1,8 @@
-import React, {useEffect} from 'react'
+import React, {useState, useEffect} from 'react'
 import '../css/formation.css'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
+import Dropdown from '../components/Dropdown'
 import Formation from '../images/formation_pat.jpg'
 //import Image from 'react-bootstrap/Image'
 //import Figure from 'react-bootstrap/Figure'
@@ -12,7 +13,7 @@ import 'aos/dist/aos.css';
 
 
 const Images =styled.img`
-width: 350px;
+width: 270px;
 height: 300px;
 @media only screen and (min-width:1024px){
   width: 500px;
@@ -20,12 +21,18 @@ height: 300px;
 }
 `; 
 const FormationScreen = () => {
+
+    const [isOpen,  setIsOpen] = useState(false)
+    const toggle = () => {
+      setIsOpen(! isOpen);
+    };
     useEffect(() =>{
         Aos.init({duration:2500})
     }, [])
     return (
         <>
-    <Navbar />
+    <Navbar toggle={toggle} />
+    <Dropdown isOpen={isOpen} toggle={toggle} />
     <Hero />
     <div className=' container-fluid mt-5 mb-lg-4 mb-md-3' >
         <div className= "row ">
