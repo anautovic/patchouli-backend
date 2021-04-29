@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
 import CheckoutSteps from '../components/CheckoutSteps'
 import { createOrder } from '../actions/orderActions'
+import Header from '../components/Header'
 
 const PlaceOrderScreen = ({ history }) => {
   const dispatch = useDispatch()
@@ -53,6 +54,7 @@ const PlaceOrderScreen = ({ history }) => {
 
   return (
     <>
+    <Header />
       <CheckoutSteps step1 step2 step3 step4 />
       <Row>
         <Col md={8}>

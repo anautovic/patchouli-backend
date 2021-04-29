@@ -6,6 +6,7 @@ import Message from '../components/Message'
 import Loader from '../components/Loader'
 import FormContainer from '../components/FormContainer'
 import { register } from '../actions/userActions'
+import Header from '../components/Header'
 
 const RegisterScreen = ({ location, history }) => {
   const [name, setName] = useState('')
@@ -37,6 +38,8 @@ const RegisterScreen = ({ location, history }) => {
   }
 
   return (
+    <>
+    <Header />
     <FormContainer>
       <h1>Sign Up</h1>
       {message && <Message variant='danger'>{message}</Message>}
@@ -97,6 +100,7 @@ const RegisterScreen = ({ location, history }) => {
         </Col>
       </Row>
     </FormContainer>
+    </>
   )
 }
 

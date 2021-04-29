@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import { getOrderDetails,  } from '../actions/orderActions'
+import Header from '../components/Header'
 
 //import {ORDER_DELIVER_RESET} from '../constants/orderConstants'
 
@@ -55,6 +56,7 @@ const OrderScreen = ({ match }) => {
     <Message variant='danger'>{error}</Message>
   ) : (
     <>
+    <Header />
       <h1>Order {order._id}</h1>
       <Row>
         <Col md={8}>

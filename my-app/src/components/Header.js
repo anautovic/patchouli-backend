@@ -3,8 +3,9 @@ import { Route } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { LinkContainer } from 'react-router-bootstrap'
 import SearchBox from './SearchBox'
-import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
 import { logout } from '../actions/userActions'
+import Logo  from '../images/logo_pat.jpg'
 
 const Header = () => {
   const dispatch = useDispatch()
@@ -17,22 +18,27 @@ const Header = () => {
   }
 
   return (
-    <header>
+    <>
       <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
-        <Container>
-          <LinkContainer to='/'>
+        <div className= "container-fluid">
+          <LinkContainer to='/maboutique'>
             <Navbar.Brand><img
-        src="/evam.jfif"
+        src={Logo}
         width="150"
         height="60"
         className="d-inline-block align-top"
-        alt="evam hairlogo"
+        alt="patchouli logo"
       /></Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
           <Route render={({ history }) => <SearchBox history={history} />} />
             <Nav className='ml-auto'>
+            <LinkContainer to='/'>
+                <Nav.Link>
+                  <i className='fas fa-home'></i> Accueil
+                </Nav.Link>
+              </LinkContainer>
               <LinkContainer to='/cart'>
                 <Nav.Link>
                   <i className='fas fa-shopping-cart'></i> Cart
@@ -69,9 +75,9 @@ const Header = () => {
               )}
             </Nav>
           </Navbar.Collapse>
-        </Container>
+        </div>
       </Navbar>
-    </header>
+    </>
   )
 }
 

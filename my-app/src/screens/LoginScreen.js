@@ -6,6 +6,7 @@ import Message from '../components/Message'
 import Loader from '../components/Loader'
 import FormContainer from '../components/FormContainer'
 import { login } from '../actions/userActions'
+import Header from '../components/Header'
 
 const LoginScreen = ({ location, history }) => {
   const [email, setEmail] = useState('')
@@ -16,7 +17,7 @@ const LoginScreen = ({ location, history }) => {
   const userLogin = useSelector((state) => state.userLogin)
   const { loading, error, userInfo } = userLogin
 
-  const redirect = location.search ? location.search.split('=')[1] : '/'
+  const redirect = location.search ? location.search.split('=')[1] : '/maboutique'
 
   useEffect(() => {
     if (userInfo) {
@@ -30,6 +31,8 @@ const LoginScreen = ({ location, history }) => {
   }
 
   return (
+    <>
+    <Header />
     <FormContainer>
       <h1>Sign In</h1>
       {error && <Message variant='danger'>{error}</Message>}
@@ -69,6 +72,7 @@ const LoginScreen = ({ location, history }) => {
         </Col>
       </Row>
     </FormContainer>
+    </>
   )
 }
 

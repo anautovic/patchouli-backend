@@ -1,6 +1,8 @@
-import Header from './components/Header'
+//import Header from './components/Header'
+//import Navbar from './components/Navbar'
+import Accueil from './screens/Accueil'
 import Footer from './components/Footer'
-import {Container} from 'react-bootstrap'
+//import {Container} from 'react-bootstrap'
 import HomeScreen from './screens/HomeScreen'
 import ProductScreen from './screens/ProductScreen'
 import {BrowserRouter as Router, Route} from 'react-router-dom'
@@ -17,13 +19,20 @@ import UserEditScreen from './screens/UserEditScreen'
 import ProductListScreen from './screens/ProductListScreen'
 import ProductEditScreen from './screens/ProductEditScreen'
 import OrderListScreen from './screens/OrderListScreen'
+import GallerieScreen from './screens/GalleryScreen'
+import FormationScreen from './screens/FormationScreen'
 function App() {
   return (
+
     <Router>
-    <Header />
-    <main className= "py-3" >
-    <Container>
-    <Route path="/" component= {HomeScreen}  exact />
+    {/*<Header />*/}
+  
+    
+    
+    <Route path="/" component= {Accueil}  exact />
+    <Route path="/maboutique" component= {HomeScreen}  exact />
+    <Route path="/gallerie" component= {GallerieScreen}  exact />
+    <Route path="/formation" component= {FormationScreen} exact  />
     <Route path='/admin/orderlist' component={OrderListScreen} />
     <Route path='/admin/productlist' component={ProductListScreen} exact />
     <Route
@@ -51,9 +60,9 @@ function App() {
           />
     <Route path='/admin/user/:id/edit' component={UserEditScreen} />
     <Route path="/cart/:id?" component= {CartScreen}  />
-    </Container>
+  
     
-    </main>
+    
     <Footer />
     </Router>
   );

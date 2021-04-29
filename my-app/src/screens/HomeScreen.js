@@ -9,6 +9,10 @@ import Message from '../components/Message'
 import Paginate from '../components/Paginate'
 import ProductCarousel from '../components/ProductCarousel'
 import Meta from '../components/Meta'
+import Header from '../components/Header'
+import Aos from 'aos'
+import 'aos/dist/aos.css';
+
 
 const HomeScreen = ({ match }) => {
   const keyword = match.params.keyword
@@ -20,21 +24,23 @@ const HomeScreen = ({ match }) => {
   const { loading, error, products, page, pages } = productList
 
   useEffect(() => {
+    Aos.init({duration:2500})
     dispatch(listProducts( keyword, pageNumber))
   }, [dispatch, keyword, pageNumber])
 
   return (
     <>
+    <Header />
 <Meta />
       {!keyword ? (
         <ProductCarousel />
       ) : (
-        <Link to='/' className='btn btn-light'>
+        <Link to='/maboutique' className='btn btn-light'>
           Go Back
         </Link>
       )}
 
-      <h1>Latest Products</h1>
+      <h3>Latest Products</h3>
 
     
       {loading ? (
@@ -43,7 +49,7 @@ const HomeScreen = ({ match }) => {
         <Message variant='danger'>{error}</Message>
       ) : (
         <>
-        <Row>
+        <Row data-aos="zoom-in-up">
           {products.map((product) => (
             <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
               <Product product={product} />

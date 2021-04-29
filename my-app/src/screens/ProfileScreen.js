@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import { getUserDetails, updateUserProfile } from '../actions/userActions'
+import Header from '../components/Header'
 
 const ProfileScreen = ({ location, history }) => {
   const [name, setName] = useState('')
@@ -51,6 +52,8 @@ const ProfileScreen = ({ location, history }) => {
   }
 
   return (
+    <>
+    <Header />
     <Row>
       <Col md={3}>
         <h2>User Profile</h2>
@@ -157,6 +160,7 @@ const ProfileScreen = ({ location, history }) => {
 
       </Col>
     </Row>
+    </>
   )
 }
 

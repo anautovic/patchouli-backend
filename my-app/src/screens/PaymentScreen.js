@@ -24,6 +24,7 @@ const PaymentScreen = ({ history }) => {
   }
 
   return (
+    <>
     <FormContainer>
       <CheckoutSteps step1 step2 step3 />
       <h1>Payment Method</h1>
@@ -56,6 +57,7 @@ const PaymentScreen = ({ history }) => {
         </Button>
       </Form>
     </FormContainer>
+    </>
   )
 }
 
