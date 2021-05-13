@@ -3,12 +3,12 @@ import '../css/Gallery.css'
 //import {Link} from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Dropdown from '../components/Dropdown'
-import Image1 from '../images/formation_pat.jpg'
+import Image1 from '../images/formation_pat.webp'
 import Image2 from '../images/hero2.jpg'
-import Image4 from '../images/sophie-nengel-zmUlOIT5FuI-unsplash.jpg'
+import Image4 from '../images/sophie-nengel-zmUlOIT5FuI-unsplash.webp'
 import Image3 from '../images/huile riclin.jpg'
-import Image5 from '../images/formacc.jpg'
-import Image6 from '../images/academy_pat.jpg'
+import Image5 from '../images/formacc.webp'
+import Image6 from '../images/academy_pat.webp'
 import Aos from 'aos'
 import 'aos/dist/aos.css';
 const GalleryScreen = () => {
@@ -17,7 +17,7 @@ const GalleryScreen = () => {
       setIsOpen(! isOpen);
     }
 	useEffect(()=>{
-        Aos.init({duration: 3000});
+        Aos.init({duration: 1000});
       }, []);
     return (
 		<>

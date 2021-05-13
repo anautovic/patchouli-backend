@@ -13,8 +13,8 @@ const Meta = ({ title, description, keywords }) => {
 
 Meta.defaultProps = {
   title: "Bienvenu à l'institut patchouli",
-  description: 'Nous vendons de',
-  keywords: 'Lait de beauté, buy electronics, cheap electroincs',
+  description: "Pour toutes vos tresses ( rasta, passe-meches, etc .) Venez découvrir l'institut de beauté Patchouli pour prendre soin de vous mais aussi pour faire votre shopping près de chez vous à prix discount",
+  keywords: 'Pédicure, Hammam, Make up, Manicure, massage, rasta passe-meches',
 }
 
 export default Meta

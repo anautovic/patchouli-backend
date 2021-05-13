@@ -3,14 +3,14 @@ import styled, {css} from 'styled-components/macro'
 import { Button } from './Button';
 import {IoMdArrowRoundForward}from 'react-icons/io';
 import {IoArrowForward, IoArrowBack} from 'react-icons/io5';
-import ImageOne from '../images/formacc.jpg';
-import ImageTwo from '../images/emploi.jpg';
-import ImageThree from '../images/formation_pat.jpg'
-import ImageFour from '../images/hero1.png'
+import ImageOne from '../images/formacc.webp';
+import ImageTwo from '../images/emploi.webp';
+import ImageThree from '../images/formation_pat.webp'
+import ImageFour from '../images/hero1.webp'
 import ImageFive from '../images/hero2.jpg'
-import ImageSix from '../images/cosiela-borta-qYzSBpk0Mxw-unsplash.jpg'
-import ImageSeven from '../images/resilience-cbd-MRjtLNRC4XI-unsplash.jpg'
-import ImageEight from '../images/charisse-kenion-fJ1f6rDmgrc-unsplash.jpg'
+import ImageSix from '../images/cosiela-borta-qYzSBpk0Mxw-unsplash.webp'
+import ImageSeven from '../images/resilience-cbd-MRjtLNRC4XI-unsplash.webp'
+import ImageEight from '../images/charisse-kenion-fJ1f6rDmgrc-unsplash.webp'
   
 
 
@@ -67,6 +67,9 @@ left: 0;
 width: 100vw;
 height: 100vh;
 object-fit: cover;
+@media only screen and (max-width:400px) {
+    max-width:400px;
+}
 `;
 const HeroContent = styled.div`
 position: relative;
@@ -203,7 +206,7 @@ const Hero = () => {
             setCurrent(current => (current === length - 1 ? 0 : current +1));
 
         };
-        timeout.current = setTimeout(nextSlide, 3000);
+        timeout.current = setTimeout(nextSlide, 1500);
         return function() {
            if (timeout.current){
                clearTimeout(timeout.current);
@@ -225,6 +228,7 @@ const Hero = () => {
     }
 
     return (
+        
         <HeroSection>
             <HeroWrapper>
             {slides.map((slide, index)=>{

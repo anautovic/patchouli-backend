@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import styled, {css} from 'styled-components/macro';
 import {Link} from 'react-router-dom'
 import { menuData } from '../data/MenuData';
 import {Button} from '../components/Button';
 import {FaBars}  from 'react-icons/fa';
-import Logo_pat from '../images/logo_pat.jpg'
+import Logo_pat from '../images/logo_pat.webp'
 
 
 
@@ -101,7 +101,10 @@ const Navbar = ({toggle}) => {
         }
          
     };
-    window.addEventListener('scroll', changeBackground);
+    useEffect(() =>{
+        window.addEventListener('scroll', changeBackground);
+    })
+   /* window.addEventListener('scroll', changeBackground);*/
     
 
     return ( 
