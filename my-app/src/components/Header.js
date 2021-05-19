@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <>
-      <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
+      <Navbar bg='dark' variant='dark' expand='lg'  sticky='top' collapseOnSelect>
         <div className= "container-fluid">
           <LinkContainer to='/maboutique'>
             <Navbar.Brand><img
@@ -35,12 +35,12 @@ const Header = () => {
           <Route render={({ history }) => <SearchBox history={history} />} />
             <Nav className='ml-auto'>
             <LinkContainer to='/'>
-                <Nav.Link>
+                <Nav.Link  >
                   <i className='fas fa-home'></i> Accueil
                 </Nav.Link>
               </LinkContainer>
-              <LinkContainer to='/cart'>
-                <Nav.Link>
+              <LinkContainer  to='/cart'>
+                <Nav.Link  >
                   <i className='fas fa-shopping-cart'></i> Cart
                 </Nav.Link>
               </LinkContainer>

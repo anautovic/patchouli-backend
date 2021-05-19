@@ -1,17 +1,20 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, lazy, Suspense} from 'react'
 import styled from 'styled-components'
 import Imageaccueil from '../images/accueil_pat1.webp'
-import Imageaccueils from '../images/accueil_pat.webp' 
-import  Navbar from '../components/Navbar'
+import Imageaccueils from '../images/accueil_pat.webp'
+import Aos from 'aos'
+import 'aos/dist/aos.css'; 
+/*import  Navbar from '../components/Navbar'
 import Dropdown from '../components/Dropdown'
 import Hero from '../components/Hero'
 import Services from '../components/Services'
-//import GlobalStyle from '../GlobalStyles'
-import Reviews from '../components/Reviews'
-//import { FaDivide } from 'react-icons/fa'
-//import Loaders from '../components/Loaders'
-import Aos from 'aos'
-import 'aos/dist/aos.css';
+
+import Reviews from '../components/Reviews'*/
+const Navbar = lazy(() =>import ('../components/Navbar'));
+const Dropdown = lazy(() =>import ('../components/Dropdown'));
+const Hero = lazy(() =>import ('../components/Hero'));
+const Services  = lazy(() =>import ('../components/Services'));
+const Reviews  = lazy(() =>import ('../components/Reviews'));
 
 
 const Accueil = () => {
@@ -56,6 +59,9 @@ padding: 1rem 2rem;
     return (
         
         <>
+        <Suspense fallback ={
+            <div>Loading...</div>
+        }>
         
         
                 
@@ -79,6 +85,7 @@ padding: 1rem 2rem;
                 <Services />
                 <Reviews />
     
+        </Suspense>
         </>
     )
 }

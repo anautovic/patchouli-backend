@@ -21,6 +21,7 @@ import ProductEditScreen from './screens/ProductEditScreen'
 import OrderListScreen from './screens/OrderListScreen'
 import GallerieScreen from './screens/GalleryScreen'
 import FormationScreen from './screens/FormationScreen'
+//import NotFoundPage from './screens/NotFoundPage'
 function App() {
   return (
 
@@ -58,9 +59,11 @@ function App() {
             component={HomeScreen}
             exact
           />
+     
     <Route path='/admin/user/:id/edit' component={UserEditScreen} />
     <Route path="/cart/:id?" component= {CartScreen}  />
-  
+    
+    
     
     
     <Footer />

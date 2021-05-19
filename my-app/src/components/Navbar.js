@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import styled, {css} from 'styled-components/macro';
 import {Link} from 'react-router-dom'
 import { menuData } from '../data/MenuData';
@@ -101,10 +101,8 @@ const Navbar = ({toggle}) => {
         }
          
     };
-    useEffect(() =>{
-        window.addEventListener('scroll', changeBackground);
-    })
-   /* window.addEventListener('scroll', changeBackground);*/
+    
+    window.addEventListener('scroll', changeBackground);
     
 
     return ( 

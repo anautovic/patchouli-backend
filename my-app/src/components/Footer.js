@@ -50,9 +50,9 @@ const Footer = () => {
                             </div>
                             <div className="footer-social-icon">
                                 <span>Follow us</span>
-                                <Link to="https://www.facebook.com/institutpatchouli"><i className="fab fa-facebook-f facebook-bg"></i></Link>
-                                <Link to="#"><i className="fab fa-twitter twitter-bg"></i></Link>
-                                <Link to="https://www.instagram.com/institut_de_beaute_patchouli/?hl=en"><i className="fab fa-instagram google-bg"></i></Link>
+                                <a href="https://www.facebook.com/institutpatchouli"><i className="fab fa-facebook-f facebook-bg"></i></a>
+                                <a  href="#"><i className="fab fa-twitter twitter-bg"></i></a>
+                                <a href="https://www.instagram.com/institut_de_beaute_patchouli/?hl=en"><i className="fab fa-instagram google-bg"></i></a>
                             </div>
                         </div>
                     </div>

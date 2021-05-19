@@ -58,8 +58,8 @@ const ProductScreen = ({ history, match }) => {
 
   return (
     <>
-      <Link className='btn btn-light my-3' to='/'>
-        Go Back
+      <Link className='btn btn-light my-3' to='/maboutique'>
+        Retour
       </Link>
       {loading ? (
         <Loader />
@@ -94,7 +94,7 @@ const ProductScreen = ({ history, match }) => {
                 <ListGroup variant='flush'>
                   <ListGroup.Item>
                     <Row>
-                      <Col>Price:</Col>
+                      <Col>Prix:</Col>
                       <Col>
                         <strong>fcfa{product.price}</strong>
                       </Col>
@@ -113,7 +113,7 @@ const ProductScreen = ({ history, match }) => {
                   {product.countInStock > 0 && (
                     <ListGroup.Item>
                       <Row>
-                        <Col>Qty</Col>
+                        <Col>Qté</Col>
                         <Col>
                           <Form.Control
                             as='select'
@@ -183,7 +183,7 @@ const ProductScreen = ({ history, match }) => {
                         </Form.Control>
                       </Form.Group>
                       <Form.Group controlId='comment'>
-                        <Form.Label>Comment</Form.Label>
+                        <Form.Label>Commentaire</Form.Label>
                         <Form.Control
                           as='textarea'
                           row='3'
