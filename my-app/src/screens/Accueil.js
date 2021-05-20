@@ -4,17 +4,17 @@ import Imageaccueil from '../images/accueil_pat1.webp'
 import Imageaccueils from '../images/accueil_pat.webp'
 import Aos from 'aos'
 import 'aos/dist/aos.css'; 
-/*import  Navbar from '../components/Navbar'
+import  Navbar from '../components/Navbar'
 import Dropdown from '../components/Dropdown'
 import Hero from '../components/Hero'
 import Services from '../components/Services'
 
-import Reviews from '../components/Reviews'*/
-const Navbar = lazy(() =>import ('../components/Navbar'));
+import Reviews from '../components/Reviews'
+/*const Navbar = lazy(() =>import ('../components/Navbar'));
 const Dropdown = lazy(() =>import ('../components/Dropdown'));
 const Hero = lazy(() =>import ('../components/Hero'));
 const Services  = lazy(() =>import ('../components/Services'));
-const Reviews  = lazy(() =>import ('../components/Reviews'));
+const Reviews  = lazy(() =>import ('../components/Reviews'));*/
 
 
 const Accueil = () => {
