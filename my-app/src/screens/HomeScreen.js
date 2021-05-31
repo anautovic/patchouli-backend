@@ -40,7 +40,7 @@ const HomeScreen = ({ match }) => {
         </Link>
       )}
 
-      <h3>Latest Products</h3>
+      <h1>Produits récents de Patchouli</h1>
 
     
       {loading ? (

@@ -1,4 +1,4 @@
-import React, {useState, useEffect, lazy, Suspense} from 'react'
+import React, {useState, useEffect} from 'react'
 import styled from 'styled-components'
 import Imageaccueil from '../images/accueil_pat1.webp'
 import Imageaccueils from '../images/accueil_pat.webp'
@@ -8,6 +8,7 @@ import  Navbar from '../components/Navbar'
 import Dropdown from '../components/Dropdown'
 import Hero from '../components/Hero'
 import Services from '../components/Services'
+import Meta from '../components/Meta_Acc'
 
 import Reviews from '../components/Reviews'
 /*const Navbar = lazy(() =>import ('../components/Navbar'));
@@ -59,15 +60,14 @@ padding: 1rem 2rem;
     return (
         
         <>
-        <Suspense fallback ={
-            <div>Loading...</div>
-        }>
+        
         
         
                 
                 <Navbar toggle={toggle}  />
                 <Dropdown isOpen={isOpen} toggle={toggle} />
                 <Hero  />
+                <Meta />
                 <div className="jumbotron">
                     <div className="row">
                     <div className= "col-md-6 col-lg-6 ">
@@ -85,7 +85,7 @@ padding: 1rem 2rem;
                 <Services />
                 <Reviews />
     
-        </Suspense>
+        
         </>
     )
 }
