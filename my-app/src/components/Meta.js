@@ -7,15 +7,15 @@ const Meta = ({ title, description, keywords }) => {
       <title>{title}</title>
       <meta name='description' content={description} />
       <meta name='keyword' content={keywords} />
-      <link rel="canonical" href="http://www.institutpatchouli.org//maboutique" />
+      <link rel="canonical" href="https://institutpatchouli.org/" />
     </Helmet>
   )
 }
 
 Meta.defaultProps = {
-  title: "Bienvenu à l'institut patchouli",
-  description: 'Nous vendons aussi des produits ménagés et des lotions pour le corps',
-  keywords: 'institut de beauté patchouli, make-up , massage, pose ongles',
+  title: "Institut Patchouli | Bonamoussadi",
+  description:" Venez découvrir l'institut de beauté patchouli pour prendre soin de vous mais aussi pour faire votre shopping nous sommes à Bonamoussadi antenne kotto",
+  keywords: 'Institut de beauté patchouli, make-up , massage, pose ongles, Antenne kotto, patchouli, institut patchouli' ,
 }
 
 export default Meta

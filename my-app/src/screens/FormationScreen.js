@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Dropdown from '../components/Dropdown'
 import Formation from '../images/formation_pat.jpg'
+import { Helmet } from "react-helmet";
 //import Image from 'react-bootstrap/Image'
 //import Figure from 'react-bootstrap/Figure'
 import { Form, Button } from 'react-bootstrap'
@@ -31,6 +32,16 @@ const FormationScreen = () => {
     }, [])
     return (
         <>
+        <Helmet>
+        <title>Institut patchouli </title>
+        <meta property="og:image" content="https://res.cloudinary.com/wil/image/upload/v1620932120/hero1_hzhcjg.webp" />
+    <link rel="apple-touch-icon" href="../src/images/logo_pat.webp" />
+    <meta property="robots" content="index, follow" />
+   
+        <meta property="og:type" content="Website" />
+        <meta name='keyword' content="Formation, institut de beauté, Pédicure Manicure, Hammam, Make up , patchouli, rasta passe-meches, antenne Kotto" />
+        <meta name="description" content="Tu souhaites devenir une professionnelle de la beauté et tu ne sais pas où te former ? L'institut Patchouli t'offre un cadre agréable,  mets à ta disposition des professionnels du domaine et te remets une attestation de fin de formation agréée par les autorités compétentes de l'État" />
+      </Helmet>
     <Navbar toggle={toggle} />
     <Dropdown isOpen={isOpen} toggle={toggle} />
     <Hero />

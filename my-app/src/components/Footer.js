@@ -45,13 +45,13 @@ const Footer = () => {
                         <div className="footer-widget">
                             
                             <div className="footer-text">
-                                <p>Venez découvrir l'institut de beauté Patchouli, situé au carrefour Antenne Kotto pour prendre soin de vous mais aussi pour faire 
+                                <p>Venez découvrir l'institut de beauté Patchouli, situé au carrefour Antenne Kotto Bonamoussadi pour prendre soin de vous mais aussi pour faire 
                                 votre shopping près de chez vous à prix discount.</p>
                             </div>
                             <div className="footer-social-icon">
                                 <span>Follow us</span>
                                 <a href="https://www.facebook.com/institutpatchouli"><i className="fab fa-facebook-f facebook-bg"></i></a>
-                                <a  href="#"><i className="fab fa-twitter twitter-bg"></i></a>
+                                <a  href="/"><i className="fab fa-twitter twitter-bg"></i></a>
                                 <a href="https://www.instagram.com/institut_de_beaute_patchouli/?hl=en"><i className="fab fa-instagram google-bg"></i></a>
                             </div>
                         </div>
