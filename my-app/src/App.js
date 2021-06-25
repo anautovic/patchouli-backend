@@ -4,6 +4,7 @@ import Accueil from './screens/Accueil'
 import Footer from './components/Footer'
 //import {Container} from 'react-bootstrap'
 //import { Helmet } from "react-helmet";
+import ServicePatchouli from "./screens/ServicePatchouli"
 import HomeScreen from './screens/HomeScreen'
 import ProductScreen from './screens/ProductScreen'
 import {BrowserRouter as Router, Route} from 'react-router-dom'
@@ -32,6 +33,7 @@ function App() {
     
     
     <Route path="/" component= {Accueil}  exact />
+    <Route path="/services" component= {ServicePatchouli}  exact />
     <Route path="/maboutique" component= {HomeScreen}  exact />
     <Route path="/gallerie" component= {GallerieScreen}  exact />
     <Route path="/formation" component= {FormationScreen} exact  />

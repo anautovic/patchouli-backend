@@ -35,10 +35,20 @@ const productSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    category: {
-      type: String,
-      required: true,
-    },
+
+  category: {
+    type: String,
+    required: [true, 'Please select category for this product'],
+    enum: {
+        values: [
+          'Huile de beauté',
+          'Huile de joba',
+          'Maquillage',
+          'Hammam'
+        ],
+        message: 'Please select correct category for product'
+    }
+},
     description: {
       type: String,
       required: true,

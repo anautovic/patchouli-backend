@@ -24,8 +24,8 @@ const Header = () => {
           <LinkContainer to='/maboutique'>
             <Navbar.Brand><img
         src={Logo}
-        width="150"
-        height="60"
+        width="80"
+        height="70"
         className="d-inline-block align-top"
         alt="patchouli logo"
       /></Navbar.Brand>

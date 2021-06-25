@@ -1,88 +1,50 @@
-import React,{useState, useEffect} from 'react'
+import React,{useState} from 'react'
 import '../css/Gallery.css'
 //import {Link} from 'react-router-dom'
-import Navbar from '../components/Navbar'
-import Dropdown from '../components/Dropdown'
-import Image1 from '../images/formation_pat.webp'
-import Image2 from '../images/hero2.jpg'
-import Image4 from '../images/sophie-nengel-zmUlOIT5FuI-unsplash.webp'
-import Image3 from '../images/huile riclin.jpg'
-import Image5 from '../images/formacc.webp'
-import Image6 from '../images/academy_pat.webp'
-import Aos from 'aos'
-import 'aos/dist/aos.css';
-const GalleryScreen = () => {
-	const [isOpen,  setIsOpen] = useState(false)
-    const toggle = () => {
-      setIsOpen(! isOpen);
-    }
-	useEffect(()=>{
-        Aos.init({duration: 1000});
-      }, []);
+import NavbarS from '../components/NavbarS'
+import Categories from '../components/Categories'
+import items from '../data/GalleryData'
+import {Row, Container} from 'react-bootstrap'
+import Menu from '../components/Menu'
+
+
+const allCategories = ['all', ...new Set(items.map((item) => item.category))];
+function GalleryScreen () {
+	
+    const [menuItems, setMenuItems] = useState(items);
+    const [categories, setCategories] = useState(allCategories);
+  
+    const filterItems = (category) => {
+      if (category === 'all') {
+        setMenuItems(items);
+        return;
+      }
+      const newItems = items.filter((item) => item.category === category);
+      setMenuItems(newItems);
+    };
+  //-fx-image-gal
     return (
-		<>
-		<Navbar toggle={toggle} />
-		<Dropdown isOpen={isOpen} toggle={toggle} />
-		<hr></hr> 
-        <div className ='body'>
-            
-            <div className="-fx-image-gal">
-	<div className="-fx-gal-item"
-	data-aos="fade-up">
-		<div className="-fx-gal-image-thumb" tabindex="1">
-			
-				<img src={Image1} alt='image1' />
-			
-		</div>
-	</div>
-
-	<div className="-fx-gal-item"
-	data-aos="zoom-in-up">
-		<div className="-fx-gal-image-thumb" tabindex="1">
-			
-				<img src={Image2} alt='image2' />
-			
-		</div>
-	</div>
-
-	<div className="-fx-gal-item"
-	data-aos="zoom-in-down">
-		<div className="-fx-gal-image-thumb" tabindex="1">
-			
-				<img src={Image3} alt='image3'/>
-			
-		</div>
-	</div>
-
-	<div className="-fx-gal-item"
-	data-aos="fade-up">
-		<div className="-fx-gal-image-thumb" tabindex="1">
-			
-				<img src={Image4} alt='image4'/>
-			
-		</div>
-	</div>
-
-	<div className="-fx-gal-item" data-aos="fade-up">
-		<div className="-fx-gal-image-thumb" tabindex="1">
-			
-				<img src={Image5}  alt='image5'/>
-			
-		</div>
-	</div>
-
-	<div className="-fx-gal-item" data-aos="zoom-in-up">
-		<div className="-fx-gal-image-thumb" tabindex="1">
-			
-				<img src={Image6} alt='image6' />
-			
-		</div>
-	</div>
-</div>
-
-        </div>
-		</>
-    )
-}
+<>
+      <NavbarS />
+      <Container fluid='xl lg'>
+          <Categories categories={categories} filterItems={filterItems} />
+          <Row>
+          <Menu items={menuItems} />
+          </Row>
+          </Container>
+    
+  
+       
+          {/*<div className="title">
+            <h2>our menu</h2>
+            <div className="underline"></div>
+          </div>
+          <Categories categories={categories} filterItems={filterItems} />
+    <Menu items={menuItems} />*/}
+      
+      </>
+    );
+  }
+  
 
 export default GalleryScreen

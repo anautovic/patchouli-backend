@@ -3,14 +3,14 @@ import styled, {css} from 'styled-components/macro'
 import { Button } from './Button';
 import {IoMdArrowRoundForward}from 'react-icons/io';
 import {IoArrowForward, IoArrowBack} from 'react-icons/io5';
-import ImageOne from '../images/formacc.webp';
-import ImageTwo from '../images/emploi.webp';
-import ImageThree from '../images/formation_pat.webp'
+import ImageOne from '../images/rasta_realisation1.jpg';
+import ImageTwo from '../images/bar_makeup.jpg';
+import ImageThree from '../images/realisation2.jpg'
 import ImageFour from '../images/hero1.webp'
 import ImageFive from '../images/hero2.jpg'
-import ImageSix from '../images/cosiela-borta-qYzSBpk0Mxw-unsplash.webp'
-import ImageSeven from '../images/resilience-cbd-MRjtLNRC4XI-unsplash.webp'
-import ImageEight from '../images/charisse-kenion-fJ1f6rDmgrc-unsplash.webp'
+import ImageSix from '../images/acceuil_siege.jpg'
+import ImageSeven from '../images/accueil_siege2.jpg'
+import ImageEight from '../images/ken_paulette.jpg'
   
 
 
@@ -65,7 +65,7 @@ position: absolute;
 top: 0;
 left: 0;
 width: 100vw;
-height: 100vh;
+height: 90vh;
 object-fit: cover;
 @media only screen and (max-width:400px) {
     max-width:400px;

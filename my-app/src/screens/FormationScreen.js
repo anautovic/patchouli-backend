@@ -1,32 +1,24 @@
-import React, {useState, useEffect} from 'react'
-import '../css/formation.css'
-import Navbar from '../components/Navbar'
-import Hero from '../components/Hero'
-import Dropdown from '../components/Dropdown'
-import Formation from '../images/formation_pat.jpg'
+import React, { useEffect} from 'react'
+//import '../css/formation.css'
+import NavbarS from '../components/NavbarS'
 import { Helmet } from "react-helmet";
-//import Image from 'react-bootstrap/Image'
-//import Figure from 'react-bootstrap/Figure'
-import { Form, Button } from 'react-bootstrap'
-import styled from 'styled-components'
+import { Row, Col, Card, Container} from 'react-bootstrap';
 import Aos from 'aos'
 import 'aos/dist/aos.css';
+import '../css/formation.css'
 
 
-const Images =styled.img`
-width: 270px;
-height: 300px;
-@media only screen and (min-width:1024px){
-  width: 500px;
-  height: 400px;
-}
-`; 
+
+ 
+
+
+
+ 
+
+
 const FormationScreen = () => {
 
-    const [isOpen,  setIsOpen] = useState(false)
-    const toggle = () => {
-      setIsOpen(! isOpen);
-    };
+    
     useEffect(() =>{
         Aos.init({duration:2500})
     }, [])
@@ -34,7 +26,7 @@ const FormationScreen = () => {
         <>
         <Helmet>
         <title>Institut patchouli </title>
-        <meta property="og:image" content="https://res.cloudinary.com/wil/image/upload/v1620932120/hero1_hzhcjg.webp" />
+        <meta property="og:image" content="https://res.cloudinary.com/wil/image/upload/v1624495958/formationInst_uzgfxm.jpg" />
     <link rel="apple-touch-icon" href="../src/images/logo_pat.webp" />
     <meta property="robots" content="index, follow" />
    
@@ -42,66 +34,166 @@ const FormationScreen = () => {
         <meta name='keyword' content="Formation, institut de beauté, Pédicure Manicure, Hammam, Make up , patchouli, rasta passe-meches, antenne Kotto" />
         <meta name="description" content="Tu souhaites devenir une professionnelle de la beauté et tu ne sais pas où te former ? L'institut Patchouli t'offre un cadre agréable,  mets à ta disposition des professionnels du domaine et te remets une attestation de fin de formation agréée par les autorités compétentes de l'État" />
       </Helmet>
-    <Navbar toggle={toggle} />
-    <Dropdown isOpen={isOpen} toggle={toggle} />
-    <Hero />
-    <div className=' container-fluid mt-5 mb-lg-4 mb-md-3' >
-        <div className= "row ">
-            <div className= 'col-sm-12 col-md-6 col-xs-6'
-            data-aos="zoom-in">
-  <Images  src={Formation}  alt="171x180" />
+      <NavbarS />
+
+<Container fluid="lg xl ">  
+<Row className="mt-5">
+<Col md={6}>
+<Card className="card_ct" >
+  <Card.Img variant="top" 
+  src="https://res.cloudinary.com/wil/image/upload/v1624501215/WhatsApp_Image_2021-06-24_at_03.17.24_kdqdzl.jpg" 
+  alt= "promotrice"/>
+  </Card>
+</Col>
+
+
+<Col md={6}>
+       
+    <h3 className="mb-2">PATCHOULI BEAUTY ACADEMY </h3>
+    <p className=" mb-auto">
+    L’Institut de beauté patchouli est un centre de formation professionnel offrant des formations 
+    dans: onglerie, make-up, coiffure mixte, cosmétiques, esthétiques.<br></br>
+    En plus de la formation nous offrons des stages et des attestations délivrées par l'Etat.
+    </p>
+    <button type="button" className="btns" ><a href="+237 699504975" style= {{
+        textDecoration:"none" 
+        }}>Appelez nous <i className='fas fa-phone'></i></a>
+        
+      </button>
+</Col>
+</Row>
+      </Container>
+
+
+
+
+
+      <div className="album py-5 bg-light">
+    <Container fluid='xl lg'>
+
+      <div className="row">
+        <div className="col-md-4">
+          <div className="card mb-4 shadow-sm">
+          <div className="card" style={{width: "18rem"}}>
+  <img src="https://res.cloudinary.com/wil/image/upload/v1624547771/onglerieform_ortitn.jpg" className="card-img-top" alt="Onglerie_flyer" />
+ </div>
+
+            <div className="card-body">
+              
+              <div className="d-flex justify-content-between align-items-center">
+                <div className="btn-group">
+                  <button type="button" className="btn btn-sm btn-outline-secondary"
+                  href=" https://res.cloudinary.com/wil/image/upload/v1624547771/onglerieform_ortitn.jpg" download >télécharger</button>
+                  <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                
+              </div>
             </div>
-
-            <div className= 'col-sm-12 col-md-6 col-xs-12'
-            data-aos="zoom-in-left">
-
-
-
-
-
-
-            <Form>
-  <Form.Group controlId="formBasicEmail">
-    <Form.Label>Email address</Form.Label>
-    <Form.Control type="email" placeholder="Enter email" />
-    <Form.Text className="text-muted">
-      nous demandons votre email afin de vous communiquer
-    </Form.Text>
-  </Form.Group>
-  <Form.Group controlId="formBasicPassword">
-    <Form.Label>Nom</Form.Label>
-    <Form.Control type="text"  />
-  </Form.Group>
-  <Form.Group controlId="formBasicPassword">
-    <Form.Label>Prénom</Form.Label>
-    <Form.Control type="text" placeholder="Prenom" />
-  </Form.Group>
-
-  <Form.Group controlId="formBasicPassword">
-    <Form.Label>Numéro de tel</Form.Label>
-    <Form.Control type="password" placeholder="" />
-  </Form.Group>
-
-  <Form.Group controlId="formBasicCheckbox">
-    <Form.Check type="checkbox" label="Check me out" />
-  </Form.Group>
-  <Button variant="primary" type="submit">
-    Envoyer
-  </Button>
-</Form>
-
-
-
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div className="card mb-4 shadow-sm">
+          <div className="card" style={{width: "18rem"}}>
+  <img src="https://res.cloudinary.com/wil/image/upload/v1624547771/esthetique_v2kual.jpg"
+   className="card-img-top" alt="coiffure_complete_flyer" />
+ </div>
+            <div className="card-body">
+              
+              <div className="d-flex justify-content-between align-items-center">
+                <div className="btn-group">
+                  <button type="button" className="btn btn-sm btn-outline-secondary"
+                  href="https://res.cloudinary.com/wil/image/upload/v1624547771/esthetique_v2kual.jpg" download>télécharger</button>
+                  <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                
+              </div>
             </div>
-
-
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div className="card mb-4 shadow-sm">
+          <div className="card" style={{width: "18rem"}}>
+  <img src="https://res.cloudinary.com/wil/image/upload/v1624547771/make-up_nbjri1.jpg" className="card-img-top" alt="make-up_flyer" />
+ </div>
+            <div className="card-body">
+              
+              <div className="d-flex justify-content-between align-items-center">
+                <div className="btn-group">
+                  <button type="button" className="btn btn-sm btn-outline-secondary"
+                  href="https://res.cloudinary.com/wil/image/upload/v1624547771/make-up_nbjri1.jpg" download>View</button>
+                  <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
         </div>
 
-    </div>
- 
+        <div className="col-md-4">
+          <div className="card mb-4 shadow-sm">
+          <div className="card" style={{width: "18rem"}}>
+  <img src="https://res.cloudinary.com/wil/image/upload/v1624547782/Coiffure_fyi0wh.jpg"
+   className="card-img-top" alt="coiffure_flyer" />
+ </div>
+            <div className="card-body">
+              
+              <div className="d-flex justify-content-between align-items-center">
+                <div className="btn-group">
+                  <button type="button" className="btn btn-sm btn-outline-secondary"
+                  href= "https://res.cloudinary.com/wil/image/upload/v1624547782/Coiffure_fyi0wh.jpg" download>View</button>
+                  <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div className="card mb-4 shadow-sm">
+          <div className="card" style={{width: "18rem"}}>
+  <img src="https://res.cloudinary.com/wil/image/upload/v1624547771/coiffure_complete_lsvfu9.jpg" 
+  className="card-img-top" alt="formation_complete_flyer" />
+ </div>
+            <div className="card-body">
+              
+              <div className="d-flex justify-content-between align-items-center">
+                <div className="btn-group">
+                  <button type="button" className="btn btn-sm btn-outline-secondary"
+                  href= "https://res.cloudinary.com/wil/image/upload/v1624547771/coiffure_complete_lsvfu9.jpg" download>View</button>
+                  <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div className="card mb-4 shadow-sm">
+          <div className="card" style={{width: "18rem"}}>
+  <img src="https://res.cloudinary.com/wil/image/upload/v1624547771/onglerieform_ortitn.jpg"
+   className="card-img-top" alt="Onglerie_flyer" />
+ </div>
+            <div className="card-body">
+              
+              <div className="d-flex justify-content-between align-items-center">
+                <div className="btn-group">
+                  <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </Container>
+        </div>
+
+
+
 </>
         
     )
 }
 
-export default FormationScreen
+ export default FormationScreen
