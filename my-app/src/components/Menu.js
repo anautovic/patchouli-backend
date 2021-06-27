@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 const Menu = ({items}) => {
 
     useEffect(()=> {
-        Aos.init({duration:2000})
+        Aos.init({duration:500})
            
        }, [])
     return (

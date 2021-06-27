@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { FaAngleDoubleRight } from 'react-icons/fa'
 import {Services} from "../data/ServicesData"
+import {Container, Row} from 'react-bootstrap' 
 import '../css/service.css'
 import Aos from 'aos'
 import 'aos/dist/aos.css';
@@ -28,7 +29,7 @@ const ServicePatchouli = () => {
   }
   useEffect(() => {
     fetchJobs();
-    Aos.init({duration:1000})
+    Aos.init({duration:700})
   }, [])
   if (loading) {
     return (
@@ -107,6 +108,56 @@ const ServicePatchouli = () => {
         }}>Appelez nous</a>
         
       </button>
+      <Container fluid= 'xl lg' >
+        <Row>
+        <div className="col-md-4">
+          <div data-aos="zoom-in" className="card mb-4  mt-3 shadow-sm">
+         
+  
+
+<video className="card video-fluid z-depth-1" style={{width: "18rem",
+   height: '400px'}}   >
+  <source src="https://res.cloudinary.com/wil/video/upload/v1624794440/VID-20210615-WA0088_xoobg4.mp4" type="video/mp4"
+  className="card-img-top" 
+   style={{width: "18rem", height: '400px'}} />
+</video>
+
+ 
+ </div>
+ </div>
+<div className="col-md-4">
+          <div data-aos="zoom-in" className="card mb-4  mt-3 shadow-sm">
+         
+  
+
+<video className="card video-fluid z-depth-1" style={{width: "18rem",
+   height: '400px'}}   >
+  <source src="https://res.cloudinary.com/wil/video/upload/v1624797428/VID-20210615-WA0084_qir6yi.mp4" type="video/mp4"
+  className="card-img-top" 
+   style={{width: "18rem", height: '400px'}} />
+</video>
+
+ 
+ </div>
+ </div>
+ <div className="col-md-4">
+          <div data-aos="zoom-in" className="card mb-4  mt-3 shadow-sm">
+         
+  
+
+<video className="card video-fluid z-depth-1" style={{width: "18rem",
+   height: '400px'}}   >
+  <source src="https://res.cloudinary.com/wil/video/upload/v1624797439/VID-20210615-WA0087_btxjyy.mp4" type="video/mp4"
+  className="card-img-top" 
+   style={{width: "18rem", height: '400px'}} />
+</video>
+
+ 
+ </div>
+ </div>
+
+        </Row>
+      </Container>
     </section>
     </>
   )

@@ -67,10 +67,11 @@ const RightNav = ({ open }) => {
   return (
     <Ul open={open} >
      <NavMenuLinks to = '/'> <li>Accueil</li></NavMenuLinks>  
+     <NavMenuLinks to ='/services' ><li>Services</li></NavMenuLinks>
+     <NavMenuLinks to= 'formation'><li>Formation</li></NavMenuLinks>
       <NavMenuLinks to= '/maboutique'><li>E-Shop</li></NavMenuLinks> 
-      <NavMenuLinks to= 'formation'><li>Formation</li></NavMenuLinks> 
       <NavMenuLinks to = 'gallerie'><li>Gallerie</li></NavMenuLinks> 
-      <NavMenuLinks to ='/services' ><li>Services</li></NavMenuLinks> 
+       
 
       <NavBtn>
                 <Button primary= 'true'>
