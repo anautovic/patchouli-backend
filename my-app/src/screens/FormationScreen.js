@@ -3,6 +3,7 @@ import React, { useEffect} from 'react'
 import NavbarS from '../components/NavbarS'
 import { Helmet } from "react-helmet";
 import { Row, Col, Card, Container} from 'react-bootstrap';
+import {Link} from 'react-router-dom'
 import Aos from 'aos'
 import 'aos/dist/aos.css';
 import '../css/formation.css'
@@ -101,8 +102,8 @@ const FormationScreen = () => {
               
               <div className="d-flex justify-content-between align-items-center">
                 <div className="btn-group">
-                  <button type="button" className="btn btn-sm btn-outline-secondary"
-                  href="https://res.cloudinary.com/wil/image/upload/v1624547771/esthetique_v2kual.jpg" download>télécharger</button>
+                  <Link type="button" className="btn btn-sm btn-outline-secondary"
+                  to="https://res.cloudinary.com/wil/image/upload/v1624547771/esthetique_v2kual.jpg" download>view</Link>
                   <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
                 </div>
                 

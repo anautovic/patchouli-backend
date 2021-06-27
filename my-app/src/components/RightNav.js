@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom'
 const Ul = styled.ul`
   list-style: none;
   display: flex;
+  padding: 5px 5px;
   flex-flow: row nowrap;
   li {
     padding: 8px 8px;
@@ -19,9 +20,11 @@ const Ul = styled.ul`
     
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
 
-    height: 70vh;
+    height: 90vh;
     width: 100vw;
     position: fixed;
+    padding: 4px 4px;
+
 z-index: 22;
 
 background: #cd853f;

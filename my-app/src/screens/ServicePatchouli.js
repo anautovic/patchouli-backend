@@ -102,7 +102,7 @@ const ServicePatchouli = () => {
           })}
         </article>
       </div>
-      <button type="button" className="btns" ><a href="+237 699504975" style= {{
+      <button type="button" className="btns" ><a href="tel:+237 699504975" style= {{
         textDecoration:"none"
         }}>Appelez nous</a>
         
