@@ -150,21 +150,20 @@ Maquillage du jour, du soir, artistique, cinéma, télévision.
                             <WorksIconContainer>
                                 <WorksIcon2/>
                             </WorksIconContainer>
-                            <WorksCardTitle>Onglerie : Gel UV-Résine-Nail Art-Vernis Gel</WorksCardTitle>
+                            <WorksCardTitle>Onglerie - Maquillage</WorksCardTitle>
                             <WorksCardText>
-                            Durée variable · 20.000 F / 25.000 FChablon/vernis 5000 F
+                            Prix variable · 20.000 F / vernis 5000 F
 Pose french sur gel, sur Résine, décoration des ongles avec du papier foil et autres...
                              
                             </WorksCardText>
                         </WorksCard>
-                        <WorksCard to= '/services'>
+                        <WorksCard to= '/services_coiffure'>
                             <WorksIconContainer>
                                 <WorksIcon3/>
                             </WorksIconContainer>
-                            <WorksCardTitle>La beauté des piéds</WorksCardTitle>
+                            <WorksCardTitle>Prestation en Coiffure</WorksCardTitle>
                             <WorksCardText>
-                            Durée variable · 5000 f cfa / 8000 f cfa massage chair
-Nettoyage des pieds en profondeur, puis relaxation des jambes avec des produits adéquats.
+                            Céramique, Teinture, Pose pérruque Shampoing, Coiffure, Défrisage,Rasta, Nattes, 
                             </WorksCardText>
                         </WorksCard>
                     </WorksCardContent>

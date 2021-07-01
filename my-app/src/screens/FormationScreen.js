@@ -56,11 +56,13 @@ const FormationScreen = () => {
     dans: onglerie, make-up, coiffure mixte, cosmétiques, esthétiques.<br></br>
     En plus de la formation nous offrons des stages et des attestations délivrées par l'Etat.
     </p>
-    <button type="button" className="btns" ><a href="+237 699504975" style= {{
-        textDecoration:"none" 
-        }}>Appelez nous <i className='fas fa-phone'></i></a>
+    <button type="button" className="btns" ><a href="tel:+237 690915116" style= {{
+        textDecoration:"none"
+        }}>Appelez nous</a>
         
       </button>
+
+      
 </Col>
 </Row>
       </Container>

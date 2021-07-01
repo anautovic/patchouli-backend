@@ -24,7 +24,7 @@ const Footer = () => {
                             <i className="fas fa-phone"></i>
                             <div className="cta-text">
                                 <h4>Appelez nous</h4>
-                                <span>+237 699504975</span>
+                                <span> 699504975 | 690915116 </span>
                             </div>
                         </div>
                     </div>

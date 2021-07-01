@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { FaAngleDoubleRight } from 'react-icons/fa'
-import {Services} from "../data/ServicesData"
+import {Services,ServicesCoif } from "../data/ServicesData"
 import {Container, Row} from 'react-bootstrap' 
 import '../css/service.css'
 import Aos from 'aos'
@@ -14,7 +14,7 @@ import NavbarS from '../components/NavbarS'
 
 
 
-const ServicePatchouli = () => {
+const ServicePatchouliCoif = () => {
   const [loading, setLoading] = useState(true)
   const [jobs, setJobs] = useState([])
   const [value, setValue] = useState(0)
@@ -22,7 +22,7 @@ const ServicePatchouli = () => {
   
 
   const fetchJobs =  () => {
-    const newJobs = Services
+    const newJobs = ServicesCoif
     
     setJobs(newJobs)
     setLoading(false)
@@ -116,10 +116,10 @@ const ServicePatchouli = () => {
   
 
 <video className="card video-fluid z-depth-1" style={{width: "18rem",
-   height: '400px'}} loop controls  >
+   height: '400px'}}  loop controls >
   <source src="https://res.cloudinary.com/wil/video/upload/v1624794440/VID-20210615-WA0088_xoobg4.mp4" type="video/mp4"
   className="card-img-top" 
-   style={{width: "18rem", height: '400px'}}  />
+   style={{width: "18rem", height: '400px'}} />
 </video>
 
  
@@ -131,7 +131,7 @@ const ServicePatchouli = () => {
   
 
 <video className="card video-fluid z-depth-1" style={{width: "18rem",
-   height: '400px'}} loop controls  >
+   height: '400px'}}  loop controls   >
   <source src="https://res.cloudinary.com/wil/video/upload/v1624797428/VID-20210615-WA0084_qir6yi.mp4" type="video/mp4"
   className="card-img-top" 
    style={{width: "18rem", height: '400px'}} />
@@ -146,7 +146,7 @@ const ServicePatchouli = () => {
   
 
 <video className="card video-fluid z-depth-1" style={{width: "18rem",
-   height: '400px'}} loop controls  >
+   height: '400px'}}  loop controls >
   <source src="https://res.cloudinary.com/wil/video/upload/v1624797439/VID-20210615-WA0087_btxjyy.mp4"
    type="video/mp4"
   className="card-img-top" 
@@ -163,4 +163,4 @@ const ServicePatchouli = () => {
     </>
   )
 }
-export default ServicePatchouli
+export default ServicePatchouliCoif

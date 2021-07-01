@@ -23,6 +23,7 @@ import ProductEditScreen from './screens/ProductEditScreen'
 import OrderListScreen from './screens/OrderListScreen'
 import GallerieScreen from './screens/GalleryScreen'
 import FormationScreen from './screens/FormationScreen'
+import ServicePatchouliCoif from './screens/ServicePatchouliCoif'
 //import NotFoundPage from './screens/NotFoundPage'
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
     
     <Route path="/" component= {Accueil}  exact />
     <Route path="/services" component= {ServicePatchouli}  exact />
+    <Route path="/services_coiffure" component= {ServicePatchouliCoif}  exact />
     <Route path="/maboutique" component= {HomeScreen}  exact />
     <Route path="/gallerie" component= {GallerieScreen}  exact />
     <Route path="/formation" component= {FormationScreen} exact  />
