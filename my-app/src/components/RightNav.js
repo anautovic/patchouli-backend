@@ -36,10 +36,11 @@ transition: 0.3s ease-in-out;
 
     
     li {
-        display:flex;
+      display:flex;
       color: white;
       align-items:center;
       justify-content: center;
+      font-size:1.5rem;
     }
   }
 `;

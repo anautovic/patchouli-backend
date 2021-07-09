@@ -52,8 +52,8 @@ useEffect(() =>{
 }}>institut de beauté patchouli Douala </h1>
                     <div className="row" data-aos="zoom-in">
                     <div className= "col-md-6 col-lg-6 ">
-                        <Accueilcontaint >Venez découvrir l'institut de beauté Patchouli pour prendre soin de vous mais aussi pour faire votre
-                            shopping près de chez vous à prix discount
+                        <Accueilcontaint >Venez découvrir l'institut de beauté Patchouli pour prendre soin de vous mais aussi, pour faire votre
+                            shopping près de chez vous à prix discount.
                         </Accueilcontaint>
                     </div>
                     <div className="col-md-6 col-lg-6"

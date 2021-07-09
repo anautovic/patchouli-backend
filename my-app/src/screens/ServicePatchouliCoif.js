@@ -91,17 +91,7 @@ const ServicePatchouliCoif = () => {
         </div>
         </div>
         
-       <article className="job-info" data-aos="fade-right">
-          <h4>Tarifs : </h4>
-          {price.map((price, index) => {
-            return (
-              <div key={index} className="job-desc">
-                <FaAngleDoubleRight className="job-icon"></FaAngleDoubleRight>
-                <p>{price}</p>
-              </div>
-            )
-          })}
-        </article>
+
       </div>
       <button type="button" className="btns" ><a href="tel:+237 690915116" style= {{
         textDecoration:"none"
