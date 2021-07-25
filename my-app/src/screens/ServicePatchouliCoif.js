@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { FaAngleDoubleRight } from 'react-icons/fa'
-import {Services,ServicesCoif } from "../data/ServicesData"
+import {ServicesCoif } from "../data/ServicesData"
 import {Container, Row} from 'react-bootstrap' 
 import '../css/service.css'
 import Aos from 'aos'
@@ -38,7 +38,7 @@ const ServicePatchouliCoif = () => {
       </section>
     )
   }
-  const {  price,  description, titles, image  } = jobs[value]
+  const {   description, titles, image  } = jobs[value]
   return (
 <>
 <NavbarS />
@@ -74,7 +74,7 @@ const ServicePatchouliCoif = () => {
         <div className="row">
         <div className= "col" dat-aos= "fade-left">
         <article className="job-info" data-aos= "fade-left">
-          <h3>{titles}</h3>
+          <h3>Tarifs {titles}</h3>
           {description.map((description, index) => {
             return (
               <div key={index} className="job-desc">
@@ -122,7 +122,7 @@ const ServicePatchouliCoif = () => {
 
 <video className="card video-fluid z-depth-1" style={{width: "18rem",
    height: '400px'}}  loop controls   >
-  <source src="https://res.cloudinary.com/wil/video/upload/v1624797428/VID-20210615-WA0084_qir6yi.mp4" type="video/mp4"
+  <source src="https://res.cloudinary.com/wil/video/upload/v1626772234/VID-20210713-WA0018_vcithe.mp4" type="video/mp4"
   className="card-img-top" 
    style={{width: "18rem", height: '400px'}} />
 </video>

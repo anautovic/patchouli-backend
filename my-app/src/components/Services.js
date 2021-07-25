@@ -136,24 +136,25 @@ const Services = () => {
         <div className= "container-fluid">
                     
                     <WorksCardContent data-aos="fade-down">
-                        <WorksCard to= '/services'>
+                        <WorksCard to= '/formation'>
                             <WorksIconContainer>
                                 <WorksIcon1 className="Icon"/>
                             </WorksIconContainer>
-                            <WorksCardTitle>Maquillage</WorksCardTitle>
+                            <WorksCardTitle>Formation</WorksCardTitle>
                             <WorksCardText>
-                            Durée variable · 2500 F/ 5000 F /10.000 F / 15.000 F / 20.000 F / 25.000F
-Maquillage du jour, du soir, artistique, cinéma, télévision.
+                            L’Institut de beauté patchouli est un centre de formation professionnel offrant des formations 
+        dans: onglerie, make-up, coiffure mixte, cosmétiques, esthétiques...
+        
                             </WorksCardText>
                         </WorksCard>
                         <WorksCard  to= '/services'>
                             <WorksIconContainer>
                                 <WorksIcon2/>
                             </WorksIconContainer>
-                            <WorksCardTitle>Onglerie - Maquillage</WorksCardTitle>
+                            <WorksCardTitle>Esthetique</WorksCardTitle>
                             <WorksCardText>
-                            Prix variable · 20.000 F / vernis 5000 F
-Pose french sur gel, sur Résine, décoration des ongles avec du papier foil et autres...
+                           Nous faisons des prestations en  soins spécifiques, soins de visage,  soins de corps,
+massage, onglerie, épilation, et Maquillage
                              
                             </WorksCardText>
                         </WorksCard>

@@ -26,14 +26,17 @@ const FormationScreen = () => {
     return (
         <>
         <Helmet>
-        <title>Institut patchouli </title>
+        <title>Centre de Formation Institut patchouli -Esthetique-Cosmétique-Bonamoussadi </title>
         <meta property="og:image" content="https://res.cloudinary.com/wil/image/upload/v1624495958/formationInst_uzgfxm.jpg" />
     <link rel="apple-touch-icon" href="../src/images/logo_pat.webp" />
     <meta property="robots" content="index, follow" />
    
         <meta property="og:type" content="Website" />
         <meta name='keyword' content="Formation, institut de beauté, Pédicure Manicure, Hammam, Make up , patchouli, rasta passe-meches, antenne Kotto" />
-        <meta name="description" content="Tu souhaites devenir une professionnelle de la beauté et tu ne sais pas où te former ? L'institut Patchouli t'offre un cadre agréable,  mets à ta disposition des professionnels du domaine et te remets une attestation de fin de formation agréée par les autorités compétentes de l'État" />
+        <meta name="description" content="Tu souhaites devenir une professionnelle de la beauté et tu ne sais pas où te former ? 
+        L’Institut de beauté patchouli est un centre de formation professionnel offrant des formations 
+        dans: onglerie, make-up, coiffure mixte, cosmétiques, esthétiques.
+        En plus de la formation nous offrons des stages et des attestations délivrées par l'Etat." />
       </Helmet>
       <NavbarS />
 

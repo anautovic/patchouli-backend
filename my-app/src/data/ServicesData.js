@@ -7,7 +7,7 @@ export  const Services = [
          description: [
              "Maquillage du jour   5000 fcfa",
              "Maquillage du soir  10000 fcfa" ,
-             "Marié               15000 fcfa",
+             "Mariée               15000 fcfa",
              "artistique", "cinéma", "télévision"
          ], 
          price: ["2500 fcfa", "5000 fcfa", "10.000 fcfa", "15.000 fcfa", "20.000 fcfa"],
@@ -20,7 +20,7 @@ export  const Services = [
     {
         id:"2",
         
-        titles:" Gel UV-Résine-Nail Art-Vernis Gel",
+        titles:"Onglerie ",
         category:"Onglerie",
         description: [
             "Pose ongles    3000fcfa",
@@ -44,26 +44,12 @@ export  const Services = [
 
    },
 
-   {
-    id:"3",
-    
-    titles:"La beauté des pieds",
-    category:"Onglerie-pieds",
-    description: [
-        "Nettoyage des pieds en profondeur, puis relaxation des jambes avec des produits adéquats."
-    ], 
-    price: [ "5000 fcfa",  "8000 fcfa "],
-    image:"https://res.cloudinary.com/wil/image/upload/v1624275880/WhatsApp_Image_2021-06-15_at_10.49.00_1_u4nsr5.jpg",
-    alt:"Ongle ",
-    dateEnd:""
-
-
-},
+   
 
 {
     id:"4",
     
-    titles:"Gommage corporel - Hammam",
+    titles:"Soins du corps",
     category:"Soins du corps",
     description: [
         "Le soins consiste à gommer toute la surface cutanée afin de décoller les cellules mortes dans un but de renouveler les cellules. Puis, on passe à un bain de vapeur d'une durée de 45 minutes à une heure. Ceci dépendra de la cliente.",
@@ -83,7 +69,7 @@ export  const Services = [
 {
     id:"5",
     
-    titles:"Soins du visage avec la marque Clinique",
+    titles:"Soins du visage ",
     category:"Soins Visage",
     description: [
         "Clinique est une marque américaine haut de gamme. Il existe des produits pour tous types de peau.",

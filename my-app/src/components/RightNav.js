@@ -71,7 +71,7 @@ const RightNav = ({ open }) => {
      <NavMenuLinks to ='/services' ><li>Services</li></NavMenuLinks>
      <NavMenuLinks to= 'formation'><li>Formation</li></NavMenuLinks>
       <NavMenuLinks to= '/maboutique'><li>E-Shop</li></NavMenuLinks> 
-      <NavMenuLinks to = 'gallerie'><li>Gallerie</li></NavMenuLinks> 
+      <NavMenuLinks to = 'gallerie'><li>Galerie</li></NavMenuLinks> 
        
 
       <NavBtn>
