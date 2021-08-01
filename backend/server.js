@@ -39,12 +39,12 @@ app.get('/api/config/paypal', (req, res) =>
 )
 
 const __dirname = path.resolve()
-app.use('/uploads', express.static(path.join(__dirname, '/uploads')))
+app.use('/uploads', cors(corsOptions), express.static(path.join(__dirname, '/uploads')))
 
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '/my-app/build')))
+  app.use( cors(corsOptions) ,express.static(path.join(__dirname, '/my-app/build')))
 
-  app.get('*', (req, res) =>
+  app.get('*', cors(corsOptions), (req, res) =>
     res.sendFile(path.resolve(__dirname, 'my-app', 'build', 'index.html'))
   )
 } else {
