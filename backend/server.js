@@ -22,16 +22,16 @@ const app = express()
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'))
 }
-app.use(cors({
-  origin: '*'
-}))
-
+var corsOptions = {
+  origin: 'https://6106d2c9234cb0c0c08188fc--practical-elion-cb799b.netlify.app/',
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
 app.use(express.json())
 
-app.use('/api/products', productRoutes)
-app.use('/api/users', userRoutes)
-app.use('/api/orders', orderRoutes)
-app.use('/api/upload', uploadRoutes)
+app.use('/api/products', cors(corsOptions), productRoutes)
+app.use('/api/users', cors(corsOptions), userRoutes)
+app.use('/api/orders', cors(corsOptions) , orderRoutes)
+app.use('/api/upload', cors(corsOptions), uploadRoutes)
 
 app.get('/api/config/paypal', (req, res) =>
   res.send(process.env.PAYPAL_CLIENT_ID)
