@@ -16,7 +16,7 @@ import uploadRoutes from './routes/uploadRoutes.js'
 dotenv.config()
 
 connectDB()
-const cors = require ('cors')
+
 const app = express()
 
 
