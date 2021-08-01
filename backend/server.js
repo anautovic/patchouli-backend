@@ -3,6 +3,7 @@ import express from 'express'
 import dotenv from 'dotenv'
 import colors from 'colors'
 import morgan from 'morgan'
+import cors from 'cors'
 import { notFound, errorHandler } from './middleware/errorMiddleware.js'
 import connectDB from './config/db.js'
 
@@ -23,7 +24,7 @@ if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'))
 }
 var corsOptions = {
-  origin: 'https://6106d2c9234cb0c0c08188fc--practical-elion-cb799b.netlify.app/',
+  origin: '*',
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 app.use(express.json())
