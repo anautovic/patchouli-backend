@@ -158,7 +158,7 @@ const FormationScreen = () => {
           <div className="card mb-4 shadow-sm">
           <div className="card" style={{width: "18rem"}}>
   <img src="https://res.cloudinary.com/wil/image/upload/v1624547771/coiffure_complete_lsvfu9.jpg" 
-  className="card-img-top" alt="formation_complete_flyer" />
+  className="card-img-top" alt="formation_complete_flyer" style={{width:'17rem'}} />
  </div>
             <div className="card-body">
               
