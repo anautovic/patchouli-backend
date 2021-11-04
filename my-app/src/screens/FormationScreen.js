@@ -26,15 +26,16 @@ const FormationScreen = () => {
     return (
         <>
         <Helmet>
-        <title>Centre de Formation Institut patchouli -Esthetique-Cosmétique-Bonamoussadi </title>
+        <title>Centre de Formation en Esthetique-Cosmétique-Bonamoussadi-Douala|Institut patchouli </title>
         <meta property="og:image" content="https://res.cloudinary.com/wil/image/upload/v1624495958/formationInst_uzgfxm.jpg" />
     <link rel="apple-touch-icon" href="../src/images/logo_pat.webp" />
     <meta property="robots" content="index, follow" />
-   
-        <meta property="og:type" content="Website" />
-        <meta name='keyword' content="Formation, institut de beauté, Pédicure Manicure, Hammam, Make up , patchouli, rasta passe-meches, antenne Kotto" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:title" content="Institut de beaute patchouli | centre de formation esthetique, cosmetique bonamoussadi|Douala " />
+        <meta property="og:url" content="https://www.institutpatchouli.org/formation" />
+        <meta name='keyword' content="Formation, institut de beauté, Pédicure Manicure, Hammam, esthetique, patchouli,Centre de formation douala bonamoussadi, antenne Kotto" />
         <meta name="description" content="Tu souhaites devenir une professionnelle de la beauté et tu ne sais pas où te former ? 
-        L’Institut de beauté patchouli est un centre de formation professionnel offrant des formations 
+        L’Institut de beauté patchouli est un centre de formation professionnel à douala offrant des formations 
         dans: onglerie, make-up, coiffure mixte, cosmétiques, esthétiques.
         En plus de la formation nous offrons des stages et des attestations délivrées par l'Etat." />
       </Helmet>

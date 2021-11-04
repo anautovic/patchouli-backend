@@ -59,7 +59,7 @@ useEffect(() =>{
                     <div className="col-md-6 col-lg-6"
                      >
             <ImageA  src={Imageaccueils} alt="acceuil" />
-            <ImageA  src={Imageaccueil} alt="acceuil" />
+            <ImageA  src="https://res.cloudinary.com/wil/image/upload/v1636025439/consultation_nszmkt.jpg" alt="acceuil" />
                     </div>
                     </div>
                 </div>

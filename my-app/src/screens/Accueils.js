@@ -71,7 +71,7 @@ padding: 1rem 2rem;
                 <div className="jumbotron">
                     <div className="row">
                     <div className= "col-md-6 col-lg-6 ">
-                        <Accueilcontaint >Venez découvrir l'institut de beauté Patchouli pour prendre soin de vous mais aussi pour faire votre
+                        <Accueilcontaint >sVenez découvrir l'institut de beauté Patchouli pour prendre soin de vous mais aussi pour faire votre
                             shopping près de chez vous à prix discount
                         </Accueilcontaint>
                     </div>
