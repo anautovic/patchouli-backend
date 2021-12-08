@@ -1,39 +1,42 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
-import {Card} from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+import { Card } from 'react-bootstrap'
 import Rating from './Rating'
 
-const Product = ({items}) => {
-    
-    return (
-        <div>
-            { items.map((menuItem, index) => {
-        const {_id,image,name, numReviews, price, rating  } = menuItem;
-         return (
-            
-            <Card className = "my-3 p-3" key={index}>
-               <Link to={`/product/${_id}`}>
-<Card.Img src= {image} variant= "top" />
-               </Link>
-               <Card.Body>
-               <Link to={`/product/${_id}`}>
-<Card.Title as='div'> 
-    <strong>{name}</strong>
-</Card.Title>
-               </Link> 
-               <Card.Text as ='div'>
-<Rating value={rating} text= {`${numReviews} review`} />
-               </Card.Text>
-               <Card.Text as='h3'> fcfa{price} </Card.Text>
-               </Card.Body>
-               </Card> 
-         );
+const Product = ({ product }) => {
+  return (
+    <Card className='my-3 p-3 rounded'>
+      <Link to={`/product/${product._id}`}>
+        <Card.Img src={product.image} variant='top' />
+      </Link>
 
-            })}
-           
-        </div>
-        
-    )
+      <Card.Body>
+        <Link to={`/product/${product._id}`}>
+          <Card.Title as='div'>
+            <strong>{product.name}</strong>
+          </Card.Title>
+        </Link>
+
+        <Card.Text as='div'>
+          <Rating
+            value={product.rating}
+            text={`${product.numReviews} reviews`}
+          />
+        </Card.Text>
+
+        <Card.Text as='h3'>${product.price}</Card.Text>
+      </Card.Body>
+      <button className="snipcart-add-item"
+  data-item-id={product._id}
+  data-item-price={product.price}
+  data-item-url={`/product/${product._id}`}
+  data-item-description={product.description}
+  data-item-image={product.image}
+  data-item-name={product.name}>
+  Add to cart
+</button>
+    </Card>
+  )
 }
 
 export default Product
