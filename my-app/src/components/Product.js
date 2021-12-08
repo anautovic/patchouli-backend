@@ -26,15 +26,7 @@ const Product = ({ product }) => {
 
         <Card.Text as='h3'>${product.price}</Card.Text>
       </Card.Body>
-      <button className="snipcart-add-item"
-  data-item-id={product._id}
-  data-item-price={product.price}
-  data-item-url={`/product/${product._id}`}
-  data-item-description={product.description}
-  data-item-image={product.image}
-  data-item-name={product.name}>
-  Add to cart
-</button>
+   
     </Card>
   )
 }
